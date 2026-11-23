@@ -36,6 +36,14 @@
             display: flex; /*keep them on a row just*/
             flex-wrap: wrap; /*moves them down if the row is not enough*/
         }
+        nav a:hover{
+            color: white;
+            background-color: rgb(4, 82, 4);
+            transition: 0.3s;
+            border-radius: 5px;
+            padding: 5px;
+            
+        }
         .Join{
             background-color: rgb(4, 82, 4);
             color: white;
@@ -54,7 +62,7 @@
             margin: 18px 0;
             border-radius: 10px;
         }
-        h1, h2, h3{
+        h1{
             color: black;
         }
 
@@ -98,13 +106,20 @@
             color: white;
             margin: 7px; /*space them, the links "a"*/
         }
+        .logo{
+            font-size: 20px;
+            font-weight: 900;
+        }
+        .loogo{
+            color: rgba(247, 1, 1, 0.729);
+        }        
         
     </style>
 </head>
 <body>
         <header>
         <div>
-            <a href="index.html">Clean Kampala</a>
+            <a href="index.html" class="logo">Clean <span class="loogo"> Kampala </span> Hub</a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="find collector.html">Find a Collector</a>

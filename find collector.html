@@ -11,8 +11,8 @@
             color: #24332d;
              line-height: 1.6;
             margin: 0;
-            background-image: url("https://i.pinimg.com/736x/4c/3f/e6/4c3fe66622f758094b5cb3317ab0fd70.jpg");
-            background-size: 100% auto;      
+            background-image: url("https://i.pinimg.com/736x/a4/7e/ec/a47eecfdf65803f77d8d7f340be9f4ca.jpg");
+            background-size: 150% auto;      
             background-position: center;   
         }
 
@@ -34,8 +34,16 @@
             margin: 6px;
         }
         nav{
-            display: flex; /*keep them on a row just*/
-            flex-wrap: wrap; /*moves them down if the row is not enough*/
+            display: flex; /* keep them on a row */
+            flex-wrap: wrap; /* move them down if the row is not enough */
+        }
+        nav a:hover{
+            color: white;
+            background-color: rgb(4, 82, 4);
+            transition: 0.3s;
+            border-radius: 5px;
+            padding: 5px;
+            
         }
         .Join{
             background-color: rgb(4, 82, 4);
@@ -44,24 +52,29 @@
             border-radius: 5px
         }
         main{
-            max-width: 1070px; /*just keeps it centred with the help pr margin auto*/
+            max-width: 1070px; /* keep it centred with margin auto */
             margin: auto;
             padding: 16px;
         
         }
-        section{ /*basically everything under section, the different cards*/
-            background: white;
+        section{ /* styles the cards under section */
+            background: wheat;
             padding: 23px;
             margin: 18px 0;
             border-radius: 10px;
+            border-left: 2px solid grey;
+
         }
         h1, h2, h3{
             color: black;
         }
         
-        .hero{
+        .jolie{
             background: #eaf3ec;
             padding: 35px 22px;
+            background: linear-gradient(90deg, rgba(27, 94, 63, 0.795), rgba(8, 73, 43, 0.6)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLIzYQu3VxYtNuZ6YgniAc1hoRRrmPWUfuiYhQ8Eck_Q&s=10");
+            background-size: cover;
+            background-position: center;
         }
 
         article{
@@ -77,11 +90,37 @@
             color: white;
             text-align: center;
             padding: 18px;
-            margin-top: 25px; /*extend the content which is up, like put a gap btn*/
+            margin-top: 25px; /* add a gap above the footer */
         }
         footer a{
             color: white;
-            margin: 7px; /*space them, the links "a"*/
+            margin: 7px; /* space the links */
+        }
+        .small{
+            color:#fff;
+            background-color: #023016;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .leaves{
+            background-color: rgba(14, 87, 14, 0.877);
+            border-radius: 10px;
+            padding: 15px;
+            
+
+        }
+        .pen{
+            background: url(https://cdn.pixabay.com/animation/2024/05/07/23/55/23-55-47-279_512.gif) bottom center/ 100% 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .logo{
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .great{
+            color: red;
         }
 
     </style>
@@ -90,7 +129,7 @@
 
       <header>
         <div>
-            <a href="index.html">Clean Kampala</a>
+            <a href="index.html" class="logo">Clean <span class="great">Kampala</span> hub</a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="find collector.html">Find a Collector</a>
@@ -105,56 +144,56 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-            <h1>Find a Waste Collector</h1>
-            <p>Choose your division and check the example directory information below.</p>
-            <p class="small"><strong>Important:</strong>The entries below are fictional examples for a student website demonstration. They are not real companies. Confirm real contacts, fees and collection days before using any service. </p>
+        <section class="jolie">
+            <h1 style="color: #ddd;" class="pen">Find a Waste Collector</h1>
+            <p style="color: #ddd; font-weight: 900;">Choose your division and check the example directory information below.</p>
+            <p class="small"><span style="font-weight: bold; color:aqua">Important:</span> Browse the available waste collection services and find one that suits your needs. Contact the providers directly for more information about their services and schedules </p>
         </section>
 
-        <section id="central">
-            <h2>Central Division</h2>
+        <section class="leaves">
+            <h2 style="text-align: center; font-family: 'times new roman', serif;color: white;">Central Division</h2>
             <article>
                 <h3>City Clean Collectors</h3>
-                <p><strong>Areas served:</strong> Example: Nakasero and nearby areas</p>
-                 <p><strong>Collection days:</strong> Example: Monday and Thursday</p>
+                <p><strong>Areas served:</strong> Nakasero and nearby areas</p>
+                 <p><strong>Collection days:</strong> Tuesday and Thursday</p>
                  <p><strong>Phone No:</strong> 0700 900 001</p>
-                  <p><strong>Fee range:</strong> Example: UGX 10,000–20,000</p>
+                  <p><strong>Fee range:</strong> UGX 10,000–50,000</p>
             </article>
         </section>
 
-        <section id="Kawempe">
-            <h2>Kawempe Division</h2>
+        <section class="leaves">
+            <h2 style="text-align: center; font-family: 'times new roman', serif;color: white;">Kawempe Division</h2>
             <article>
                 <h3>Green Neighbourhood Services</h3>
-                <p><strong>Areas served:</strong> Example: Kawempe and nearby areas</p>
-                <p><strong>Collection days:</strong> Example: Tuesday and Friday</p>
+                <p><strong>Areas served:</strong>  Kawempe and nearby areas</p>
+                <p><strong>Collection days:</strong>  Tuesday and Friday</p>
                 <p><strong>Phone:</strong> 0704 000 002</p>
-                <p><strong>Fee range:</strong> Example: UGX 8,000–18,000</p>
+                <p><strong>Fee range:</strong> UGX 8,000–18,000</p>
             </article>
           </section>
 
-          <section id="makindye">
-            <h2>makindye Division</h2>
+          <section class="leaves">
+            <h2 style="text-align: center; font-family: 'times new roman', serif;color: white;">Makindye Division</h2>
             <article>
                 <h3>Fresh Start Waste Services</h3>
-                <p><strong>Areas served:</strong> Example: Makindye and nearby areas</p>
-                <p><strong>Collection days:</strong> Example: Wednesday and Saturday</p>
+                <p><strong>Areas served:</strong> Makindye and nearby areas</p>
+                <p><strong>Collection days:</strong> Wednesday and Saturday</p>
                 <p><strong>Phone:</strong> 0790 000 003</p>
-                <p><strong>Fee range:</strong> Example: UGX 10,000–25,000</p>
+                <p><strong>Fee range:</strong>  UGX 10,000–25,000</p>
             </article>
           </section>
 
-          <section id="nakawa">
-            <h2>Nakawa Division</h2>
+          <section class="leaves">
+            <h2 style="text-align: center; font-family: 'times new roman', serif;color: white; ">Nakawa Division</h2>
             <article>
                 <h3>Clean Path Collectors</h3>
-                <p><strong>Areas served:</strong> Example: Nakawa and nearby areas</p>
+                <p><strong>Areas served:</strong> Nakawa and nearby areas</p>
                 <p><strong>Phone:</strong> 0730 000 004</p>
-                <p><strong>Fee range:</strong> Example: UGX 12,000–22,000</p>
+                <p><strong>Fee range:</strong> UGX 12,000–22,000</p>
             </article>
           </section>
-          <section id="rubaga">
-            <h2>Rubaga Division</h2>
+          <section class="leaves">
+            <h2 style="text-align: center; font-family: 'times new roman', serif;color: white;">Rubaga Division</h2>
             <article>
                 <h3>Better Environment Collectors</h3>
                 <p><strong>Areas served:</strong>Rubaga and nearby areas</p>
@@ -170,14 +209,14 @@
                 <li>Ask which neighbourhoods the collector serves.</li>
                 <li>Confirm collection days and fees before agreeing.</li>
                 <li>Ask for proof of payment where possible.</li>
-                <li>Check that the collector disposes of waste responsibly.</li>
+                <li>Check that the collector disposes off waste responsibly.</li>
             </ul>
         </section>
 
     </main>
 
     <footer>
-        <p><strong>♻ Clean Kamapla Hub</strong></p>
+        <p><strong>♻️ Clean Kamapla Hub</strong></p>
         <p>Working together for a cleaner Kampala</p>
         <p>
             <a href="about.html">About</a>

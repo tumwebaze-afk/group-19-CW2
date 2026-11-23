@@ -11,7 +11,7 @@
             line-height: 1.5;
             margin: 0;
             background-color: gray;
-            background-image: url("https://i.pinimg.com/736x/06/77/2d/06772d0ba09314f5e43151af0322480e.jpg");
+            background-image: url("https://i.pinimg.com/736x/32/d0/54/32d0548cac2d17eeb208848e5f9eb512.jpg");
             background-size: 100% auto;      
             background-position: center;  
             
@@ -26,6 +26,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            
         }
         header a{
             color: green; /* clean Kampala part and everything that has a*/
@@ -34,8 +35,16 @@
             margin: 6px;
         }
         nav{
-            display: flex; /*keep them on a row just*/
-            flex-wrap: wrap; /*moves them down if the row is not enough*/
+            display: flex; /* keep them on a row */
+            flex-wrap: wrap; /* move them down if the row is not enough */
+        }
+        nav a:hover{
+            color: white;
+            background-color: rgb(4, 82, 4);
+            transition: 0.3s;
+            border-radius: 5px;
+            padding: 5px;
+            
         }
         .Join{
             background-color: rgb(4, 82, 4);
@@ -44,22 +53,22 @@
             border-radius: 5px
         }
         main{
-            max-width: 1070px; /*just keeps it centred with the help pr margin auto*/
+            max-width: 1070px; /* keeps it centred with margin auto */
             margin: auto;
             padding: 16px;
         
         }
-        section{ /*basically everything under section, the different cards*/
-            background: white;
+        section{ /* basically everything under section, the different cards */
+            background: rgb(185, 183, 183);
             padding: 23px;
             margin: 18px 0;
             border-radius: 10px;
         }
         h1, h2, h3{
-            color: black;
+            color: rgb(0, 0, 0);
         }
         article{
-            background: #fff;
+            background: #d0e0e071;
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 16px;
@@ -73,30 +82,38 @@
             
         }
 
-                footer{
+         footer{
             background: rgb(3, 65, 3);
-            color: white;
+            color:white;
             text-align: center;
             padding: 18px;
-            margin-top: 25px; /*extend the content which is up, like put a gap btn*/
+            margin-top: 25px; /* add a gap above the footer */
         }
         footer a{
             color: white;
-            margin: 7px; /*space them, the links "a"*/
+            margin: 7px; /* space the links */
+           
         }
 
         ol{
-            background-color: #f1f8f3;
+            background-color: #6e807b;
             padding: 25px 25px 25px 50px;
             border-left: 5px solid #075d2c;
             border-radius: 8px;
             line-height: 2;
-            color: #245c3a;
+            color: white;
             font-size: 16px;
             margin-top: 20px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
         }
+        .logo{
+            font-size: 20px;
+            font-weight: 900;
+        }
+        .loogo{
+            color: rgba(247, 1, 1, 0.729);
+        }        
 
     </style>
 </head>
@@ -104,7 +121,7 @@
 
      <header>
         <div>
-            <a href="index.html">Clean Kampala</a>
+            <a href="index.html" class="logo">Clean <span class="loogo"> Kampala </span> Hub</a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="find collector.html">Find a Collector</a>
@@ -156,7 +173,7 @@
     </main>
 
     <footer>
-        <p><strong>♻ Clean Kamapla Hub</strong></p>
+        <p><strong>♻️ Clean Kamapla Hub</strong></p>
         <p>Working together for a cleaner Kampala</p>
         <p>
             <a href="about.html">About</a>

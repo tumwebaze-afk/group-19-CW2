@@ -10,7 +10,7 @@
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.5;
             margin: 0;
-            background-color: gray; 
+            background-color: rgb(108, 212, 212); 
             background-image: url("https://i.pinimg.com/1200x/40/48/8d/40488d68be4b4d1dc06d767221cf1c12.jpg");
                 }
         header{
@@ -34,6 +34,14 @@
             display: flex; /*keep them on a row just*/
             flex-wrap: wrap; /*moves them down if the row is not enough*/
         }
+        nav a:hover{
+            color: white;
+            background-color: rgb(4, 82, 4);
+            transition: 0.3s;
+            border-radius: 5px;
+            padding: 5px;
+            
+        }
         .Join{
             background-color: rgb(4, 82, 4);
             color: white;
@@ -47,13 +55,22 @@
         
         }
         section{ /*basically everything under section, the different cards*/
-            background: white;
+            background: rgb(9, 112, 35);
+            
             padding: 23px;
             margin: 18px 0;
             border-radius: 10px;
+            
         }
-        h1, h2, h3{
-            color: black;
+        section h1{
+            text-align: center;
+            font-size: 30px;
+            
+        }
+        h1, h2{
+            color: rgb(4, 92, 4);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
         }
         article{
             background: #fff;
@@ -61,7 +78,16 @@
             border-radius: 8px;
             padding: 16px;
             min-width: 210px;
+            transition: 0.3s;
         }
+        article:hover{
+            border-color: black;
+            transform:translateY(-10px);
+            background-color: #158b81;
+        }
+    
+            
+        
         .small{
             font-size: 0.9em;
             margin: 10px;
@@ -77,16 +103,30 @@
             margin-top: 25px; /*extend the content which is up, like put a gap btn*/
         }
         footer a{
-            color: white;
+            color: rgb(17, 28, 180);
             margin: 7px; /*space them, the links "a"*/
         }
+        .logo{
+            font-size: 20px;
+            font-weight: 900;
+        }
+        .loogo{
+            color: rgba(247, 1, 1, 0.729);
+        }
+        .harsun{
+            background: url(https://cdn.pixabay.com/animation/2024/05/07/23/55/23-55-47-279_512.gif) bottom center/ 100% 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+          
 
     </style>
 </head>
 <body>
         <header>
         <div>
-            <a href="index.html">Clean Kampala</a>
+            <a href="index.html" class="logo">Clean <span class="loogo"> Kampala </span> Hub</a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="find collector.html">Find a Collector</a>
@@ -102,12 +142,12 @@
     </header>
     <main>
         <section>
-            <h1>News and Notices</h1>
-            <p>background reading and information regarding waste Managment</p>
+            <h1 class="harsun">News and Notices</h1>
+            <p style="text-align: center; text-transform: uppercase;">Background reading and information regarding waste Management</p>
 
 
             <article>
-                <h2>The Kiteezi landfill collapse</h2>
+                <h2 >The Kiteezi landfill collapse</h2>
                 <p>The Kiteezi landfill collapse in August 2024 highlighted the risks connected to waste disposal, landfill management and the need for safer waste-management systems.</p>
                 <a href="https://eprcug.org/blog/kampala-garbage-an-issue-much-wider-than-just-kiteezi/">Read the Economic Policy Research Centre discussion</a>
             </article>

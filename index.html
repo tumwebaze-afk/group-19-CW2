@@ -36,6 +36,14 @@
             display: flex; /*keep them on a row just*/
             flex-wrap: wrap; /*moves them down if the row is not enough*/
         }
+        nav a:hover{
+            color: white;
+            background-color: rgb(4, 82, 4);
+            transition: 0.3s;
+            border-radius: 5px;
+            padding: 5px;
+            
+        }
         .Join{
             background-color: rgb(4, 82, 4);
             color: white;
@@ -63,7 +71,7 @@
             background: linear-gradient(90deg, rgba(27, 94, 63, 0.795), rgba(8, 73, 43, 0.6)),url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1800&q=85");
             background-size: contain;
             background-position: center;
-            
+            font-family: Georgia, 'Times New Roman', Times, serif;
     
         }
 
@@ -80,14 +88,14 @@
             flex: 1; /*puts the cards horizontal*/
             min-width: 210px; /*prevents cards from becoming too narrow and the min usually means it shouldnt go beyong that width.*/
         }
-        .button{
-            display: inline-block;
+        .button{           
             background: green;
             padding: 9px 14px;
-            color: white;
-            border: 0;
+            color: white;           
             border-radius: 9px;
             text-decoration: none;
+            border-bottom: 1px solid rgb(72, 5, 5);
+            
         }
         footer{
             background: rgb(3, 65, 3);
@@ -123,6 +131,20 @@
             font-size: 16px;
             cursor: pointer;
         }
+        .logo{
+            font-size: 20px;
+            font-weight: 900;
+            
+        }
+        .loogo{
+            color: rgba(247, 1, 1, 0.729);
+        }
+        #kampala{
+          background: url(https://cdn.pixabay.com/animation/2024/05/07/23/55/23-55-47-279_512.gif) bottom center/ 100% 300%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }  
         
 
     </style>
@@ -131,7 +153,7 @@
     
     <header>
         <div>
-            <a href="index.html" class="logo">Clean Kampala Hub</a>
+            <a href="index.html" class="logo">Clean <span class="loogo"> Kampala </span> Hub</a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="find collector.html">Find a Collector</a>
@@ -148,7 +170,7 @@
     <main>
         <form>
         <section class="team">
-            <h1 style="color: blanchedalmond ;">A clean Kampala Starts with Us</h1>
+            <h1 style="font-size: 40px;" id="kampala">A clean Kampala Starts with Us</h1>
             <p><b>Find waste collectors, report waste problems and learn simple ways to manage waste responsibly.</b></p>
             <a class="button" href="find collector.html">Find a collector</a>
             <a class="button" href="report.html">Report a problem</a>
@@ -157,7 +179,7 @@
             <h2>Choose your Division</h2>
             <p>Select your division below to view the directories examples.</p>
             <label for="division">Kampala division</label> <br>
-            <select class="b"> <!--create a list of options-->
+            <select class="b" name="division"> <!--create a list of options-->
             <option value="">choose a division</option>
             <option value="central">Central</option>
             <option value="Kawempe">Kawempe</option>
@@ -165,7 +187,7 @@
             <option value="nakawa">nakawa</option>
             <option value="rubaga">rubaga</option>
             </select> <br>  <!--close the option-->
-        <button class="submit">View collector dictionary</button> 
+        <button class="submit" type="submit">View collector dictionary</button> 
         </form> 
         <p class="small"> Use its division headings to find your area.</p>
         </section>
@@ -174,17 +196,17 @@
             <h2"> WHat you can Do</h2>
             <div class="cards">
                 <article>
-                    <h3>Find a collector</h3>
+                    <h3>🔎Find a collector🔍</h3>
                     <p>View example waste collection information for Kampala division</p>
                     <a href="find collector.html">Find a collector</a>
                 </article>
                 <article>
-                    <h3>Report a problem</h3>
+                    <h3>📰Report a problem📰</h3>
                     <p>View example waste collection information for Kampala division</p>
                     <a href="report.html">Report a problem</a>
                 </article>
                 <article>
-                    <h3>Learn About</h3>
+                    <h3>📍Learn About📍</h3>
                     <p>Learn how to separate waste and dispose of it responsibly.</p>
                     <a href="waste guide.html">Read the waste guide</a>
                 </article>

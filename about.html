@@ -38,6 +38,14 @@
             display: flex; /*keep them on a row just*/
             flex-wrap: wrap; /*moves them down if the row is not enough*/
         }
+        nav a:hover{
+            color: white;
+            background-color: rgb(4, 82, 4);
+            transition: 0.3s;
+            border-radius: 5px;
+            padding: 5px;
+            
+        }
         .Join{
             background-color: rgb(4, 82, 4);
             color: white;
@@ -58,7 +66,7 @@
             border-color: #2e8b57;
             border: 4px solid wheat;
         }
-        h1, h2, h3{
+        h1, h2{
             color: black;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             
@@ -88,12 +96,28 @@
             font-weight: bold;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+        .logo{
+            font-size: 20px;
+            font-weight: 900;
+        }
+        .loogo{
+            color: rgba(247, 1, 1, 0.729);
+        }
+        article{
+            background: rgb(125, 125, 172);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            
+        
+        }
+                
     </style>
 </head>
 <body>
         <header>
         <div>
-            <a href="index.html">Clean Kampala</a>
+            <a href="index.html" class="logo">Clean <span class="loogo"> Kampala </span> Hub</a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="find collector.html">Find a Collector</a>
@@ -110,9 +134,10 @@
 
     <main>
         <section>
-            <h1 style="text-align: center;">About Clean Kampala Hub</h1>
-            <p>Clean Kampala Hub is a proposed information website for households and small traders in Kampala. It helps residents find waste collection information, report missed collections or illegal dumping, and learn simple waste-sorting practices.</p>
-
+              <article>
+                 <h1 style="text-align: center;">About Clean Kampala Hub</h1>
+                 <p>Clean Kampala Hub is a proposed information website for households and small traders in Kampala. It helps residents find waste collection information, report missed collections or illegal dumping, and learn simple waste-sorting practices.</p>
+              </article>
             <h2>Our Coverage</h2>
             <p>The project focuses on Kampala's five divisions: Central, Kawempe, Makindye, Nakawa and Rubaga.</p>
 
